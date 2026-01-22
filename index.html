@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>3D Portfolio — Mani Pandian R</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@400;700&family=Rubik:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-bubble" aria-hidden="true"></div>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#passion">Passion</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certs">Certs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="side-dots" aria-hidden="true">
+    <button onclick="document.getElementById('home').scrollIntoView({behavior:'smooth'})"></button>
+    <button onclick="document.getElementById('passion').scrollIntoView({behavior:'smooth'})"></button>
+    <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})"></button>
+    <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})"></button>
+  </div>
+
+  <!-- HOME (first page) -->
+  <section id="home">
+    <div class="page card">
+      <div class="avatar-wrap" role="img" aria-label="Profile picture">
+        <div class="avatar">
+          <!-- Put your profile image at images/profile.png -->
+          <img src="profile.jpg" alt="Profile picture"/>
+        </div>
+      </div>
+      <h1>Hi, I'm <span class="name">Mani Pandian R</span></h1>
+      <p class="lead">Frontend Developer & 3D Web Designer</p>
+      <div class="socials">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn" href="#contact">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PASSION (second page) -->
+  <section id="passion">
+    <div class="page passion-card">
+      <h2 class="passion-title">What I'm passionate about</h2>
+      <p class="passion-desc">I build immersive, animated web experiences that mix 3D effects with clean frontend code. I love transforming ideas into delightful interfaces and learning new web graphics techniques (WebGL, Three.js, shader experiments).</p>
+      <div class="tags">
+        <div class="btn">HTML</div>
+        <div class="btn">CSS / Animations</div>
+        <div class="btn">JavaScript</div>
+        <div class="btn">3D & Visuals</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT (third page) -->
+  <section id="about">
+    <div class="page">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>Hello — I'm <strong>Mani Pandian R</strong>. I design and build frontend experiences with a focus on interaction, animation and 3D depth. I enjoy writing clean code and adding subtle motion to interfaces so they feel alive. When I'm not coding I practice 3D modelling and explore generative art.</p>
+          <p class="muted">Education: B.E.Computer Science — (P.S.R Engineering,Sivakasi) • Interests: UI Design, WebGL, Visual Effects • Goals: Build accessible and delightful interfaces.</p>
+        </div>
+        <div class="about-card">
+          <div style="text-align:center">
+            <h3>Quick Facts</h3>
+            <p class="muted">Fast learner • Team player • Enjoys pixel-perfect UIs</p>
+            <div class="facts">
+              <div><strong>2+</strong><div class="muted small">Years Experience</div></div>
+              <div><strong>5++</strong><div class="muted small">Projects</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS (fourth page) -->
+  <section id="projects">
+    <div class="page">
+      <h2>Projects</h2>
+      <p class="muted">A few highlights — click to view demo or repo.</p>
+
+      <div class="projects-grid">
+        <article class="project">
+          <img src="project1.jpg" alt="Portfolio screenshot"/>
+          <h3>Portfolio Website</h3>
+          <p>Modern portfolio with 3D visuals, animated skill charts, and contact integration. Built with HTML/CSS/JS.</p>
+          <div class="project-links">
+            <a class="btn" href="#" target="_blank">Live</a>
+            <a class="btn" href="#" target="_blank">Source</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="project2.jpg" alt="Project 2"/>
+          <h3>Interactive 3D Gallery</h3>
+          <p>A gallery with interactive 3D cards and shader-driven hover effects. Built with Three.js and vanilla JS.</p>
+        </article>
+
+        <article class="project">
+          <img src="project3.jpg" alt="Project 3"/>
+          <h3>Animated Landing Page</h3>
+          <p>Landing page with micro-interactions, smooth scroll and animated background elements to emphasize CTA.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS (fifth page) -->
+<!-- SKILLS (sixth page) -->
+<section id="skills" class="skills-section">
+  <div class="page">
+    <h2 class="section-title">Skills</h2>
+    <p class="section-subtitle">Circular 3D progress visuals</p>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="progress-circle" style="--value:85">
+          <span>85%</span>
+        </div>
+        <h4>Java</h4>
+      </div>
+
+      <div class="skill-card">
+        <div class="progress-circle" style="--value:75">
+          <span>75%</span>
+        </div>
+        <h4>C</h4>
+      </div>
+
+      <div class="skill-card">
+        <div class="progress-circle" style="--value:78">
+          <span>78%</span>
+        </div>
+        <h4>C++</h4>
+      </div>
+
+      <div class="skill-card">
+        <div class="progress-circle" style="--value:80">
+          <span>80%</span>
+        </div>
+        <h4>Python</h4>
+      </div>
+
+      <div class="skill-card">
+        <div class="progress-circle" style="--value:70">
+          <span>70%</span>
+        </div>
+        <h4>.NET</h4>
+      </div>
+
+      <div class="skill-card">
+        <div class="progress-circle" style="--value:90">
+          <span>90%</span>
+        </div>
+        <h4>HTML</h4>
+      </div>
+
+      <div class="skill-card">
+        <div class="progress-circle" style="--value:85">
+          <span>85%</span>
+        </div>
+        <h4>CSS</h4>
+      </div>
+
+      <div class="skill-card">
+        <div class="progress-circle" style="--value:88">
+          <span>88%</span>
+        </div>
+        <h4>JavaScript</h4>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- CERTIFICATES (sixth page) -->
+  <section id="certs">
+    <div class="page">
+      <h2>Certificates</h2>
+      <p class="muted">Selected certificates (Full Stack,App Development,Paper Presentation)</p>
+      <div class="certs">
+        <div class="cert"><img src="certificate1.jpg" alt="cert1"/></div>
+        <div class="cert"><img src="certificate2.jpg" alt="cert2"/></div>
+        <div class="cert"><img src="certificate3.jpg" alt="cert3"/></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT (last page) -->
+  <section id="contact">
+    <div class="page">
+      <h2>Contact</h2>
+      <p class="muted">Let's connect — find me on social or send an email.</p>
+
+      <div class="contact-wrap">
+        <form id="contactForm" class="contact-form">
+          <input name="name" placeholder="Your name" required>
+          <input name="email" type="email" placeholder="Your email" required>
+          <textarea name="message" rows="5" placeholder="Message"></textarea>
+          <div style="text-align:center"><button type="submit" class="btn">Send Message</button></div>
+        </form>
+
+        <div style="margin-top:12px;text-align:center">
+          <div class="contact-links">
+            <a class="btn" href="https://github.com/manipandianr" target="_blank">GitHub</a>
+            <a class="btn" href="https://www.instagram.com/_mani18___/" target="_blank">Instagram</a>
+            <a class="btn" href="mailto:manipandian135@gmail.com">Email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>Built with ♥ — Mani Pandian R</footer>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  (function () {
+    emailjs.init("qWYMZ3jStP0kaH5ju"); // your public key
+  })();
+
+  document
+    .getElementById("contactForm")
+    .addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs
+        .sendForm(
+          "service_e7vd335",
+          "template_2qzdpdn",
+          this
+        )
+        .then(
+          function () {
+            alert("Message sent successfully ✅");
+            document.getElementById("contactForm").reset();
+          },
+          function (error) {
+            alert("Failed to send ❌");
+            console.log(error);
+          }
+        );
+    });
+</script>
+
+
+</body>
+</html>
